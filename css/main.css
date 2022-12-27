@@ -1,0 +1,23 @@
+.main-nav {
+  background-color: salmon;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav .nav-links {
+  padding: 2rem;
+}
+.main-nav .nav-links .main-nav .nav-item {
+  text-decoration: none;
+  color: white;
+}
+.main-nav .nav-links .main-nav .nav-item.active {
+  font-color: cornflowerblue;
+  font-font-size: bold;
+}
+.main-nav .nav-links .main-nav .nav-item:hover {
+  font-size: 1.2rem;
+  color: darkred;
+}/*# sourceMappingURL=main.css.map */
