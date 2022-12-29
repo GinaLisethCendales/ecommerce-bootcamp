@@ -14,8 +14,8 @@
   color: white;
 }
 .main-nav .nav-links .nav-item.active {
-  font-size-color: cornflowerblue;
-  font-size-font-size: bold;
+  color: cornflowerblue;
+  font-weight: bold;
 }
 .main-nav .nav-links .nav-item:hover {
   font-size: 1.2rem;
