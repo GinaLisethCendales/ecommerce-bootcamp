@@ -37,14 +37,12 @@
         height: calc(100vh - 50px);
     }
 
-    .menu-btn:checked ~ & .navbar__menu-label .
-        navbar__menu-icon:: after {
+    .menu-btn:checked ~ & .navbar__menu-label .navbar__menu-icon::after {
             transform: rotate(45deg);
             top: 0;
         }
 
-        .menu-btn:checked ~ & .navbar__menu-label .
-        navbar__menu-icon::before {
+        .menu-btn:checked ~ & .navbar__menu-label .navbar__menu-icon::before {
             transform: rotate(-45deg);
             top: 0;
         }

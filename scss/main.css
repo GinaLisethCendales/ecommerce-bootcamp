@@ -1,6 +1,6 @@
 .main-nav {
-  background-color: salmon;
-  color: white;
+  background-color: rgb(74, 8, 106);
+  color: rgb(199, 111, 29);
   height: 60px;
   display: flex;
   align-items: center;
@@ -14,10 +14,10 @@
   color: white;
 }
 .main-nav .nav-links .nav-item.active {
-  color: cornflowerblue;
+  color: rgb(74, 8, 106);
   font-weight: bold;
 }
 .main-nav .nav-links .nav-item:hover {
   font-size: 1.2rem;
-  color: darkred;
-}/*# sourceMappingURL=main.css.map */
+  color: rgb(199, 111, 29);
+}/*# sourceMappingURL=main.css.map */   
