@@ -1,44 +1,19 @@
-
-@import"abstracts/variables";
-
-@import"components/card";
+@import "abstracts/variables";
 
 @import "base/reset";
-@import"base/typography";
+
+@import "base/typography";
+
+@import "components/card";
 
 @import "layout/header";
+@import "layout/footer";
+@import "layout/main";
+@import "layout/sidebar";
 
+
+@import "pages/about-us";
 @import "pages/home";
-
-
-
-
-
-.main-nav{ 
-    background-color: $color-bg-primary;
-    color: $color-text-light;
-    height: 60px;
-    display: flex;
-    align-items: center;
-}
-
-.main-nav .nav-links{
-    padding: 2rem;
-    
-    .main-nav .nav-item {
-        text-decoration: none;
-        color: white;
-
-        &.active{
-                color: cornflowerblue;
-                font-size: bold;
-            
-         }
-
-         &:hover{
-            font-size:1.2rem;
-            color: darkred;
-         }
-    }
-}
+@import "pages/contact";
+@import "pages/register"
 

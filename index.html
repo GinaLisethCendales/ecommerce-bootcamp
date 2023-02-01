@@ -1,125 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Ecommerce</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <title>SYNERGIA ROOTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/scss/main.css">
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
-            
-                <a href="/index.html" class="navbar__nav-link">
-                <img class="navbar__logo" src="/assets/images/Logo.png" alt="Logo del ecommerce " witdth="50">
-                </a>
-                <ul class="navbar__nav-links-container">
-                    <li class="navbar__nav-item">
-                        <a href="/index.html" class="navbar__nav-link">Inicio</a>
-                    </li>
-                    <li class="navbar__nav-item">
-                        <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
-                    </li>
-                    <li class="navbar__nav-item">
-                        <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotrsos</a>
-                    </li>
-                    <li class="navbar__nav-item">
-                        <a href="/pages/register/register.html" class="navbar__nav-link">Registrarse</a>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
-        <div class="user-navbar">
-            <div class="user navbar__cart-icon-container">
-                <!--TODO  add font icon and icon item--> 
-                IC 
-            <main>
-                <section class="section-cards">
-                    <header  class="section-cards__header">
-                        <div class="section-cards__title-container">
-                        <h1 class="section-cards__ title">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consequatur dolore eius dolores, commodi vel iste nemo! Aspernatur laudantium expedita debitis ratione ipsum sapiente earum sint blanditiis reprehenderit, molestiae tenetur.
-                        </h1>
-                        <p class="section-cards__subtititle">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusantium sequi soluta dicta libero officia amet labore, molestias quod enim, itaque vero sint eaque provident laudantium iure illum delectus ipsum!   
-                        </p>
-                    </div> 
-                    <div class="section-card__products-search-container">
-                        <div class="products-search">
-                            <div class="product-search">
-                                <label for="" class="product-search__label">Buscar</label>
-                                <input type="text" class="product-search__input">
-                                <button class="product-search__btn">Buscar</button>
-                                
-                            </div>
-
-
-                        </div>
-                        <div class="section-card__products-count">
-                            Se encontraron x productos
-                        </div>
-                    </div>
-                    </header>
-
-                    <div class="cards-container">
-                        <h1 class="cards-containers__category">
-                            CATEGORIA:OFERTAS
-                        </h1>
-                        <article class="card">
-                            <div class="card__header">
-                                <img src="#" alt="Product Image" class="card__img">
-                          
-                        </article>
-                    </div>
-
-
-
-                </section>
-            </main>
-            <div class="whatsapp-container">
-                <a href="" class="whatsapp-container__link">
-                    <img src="#" alt="whatsapp contact link" class="whatsapp-container__img">
-                </a>
-            </div>
-            <footer class="footer">
-                <div class="footer__column">
-                    <ul class="footer__social-media-container">
-                    <li class="footer_social-medoa-item">
-                        <a href="#" class="footer__social-media-link">
-                          <!-- Icono -->
-                            Facebook
-                     </a>
-                    </li>
-                    <li class="footer_social-medoa-item">
-                        <a href="#" class="footer__social-media-link">
-                            <!-- Icono -->
-                            Instagram
+            <a href="/index.html" class="navbar__nav-link">
+                <img class="navbar__logo" src="/assets/images/Logo.png" alt="Logo del ecommerce">
+            </a>
+            <div class="user-navbar">
+                <div class="user-navbar__cart-icon-container">
+                    <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
                     </a>
-                    </li>
-                    <li class="footer_social-medoa-item">
-                        <a href="#" class="footer__social-media-link">
-                            <!-- Icono -->
-                            Linkedin
-                      </a>
-                   </li>
-                </ul>     
                 </div>
-                <div class="footer__column">
-                    <img src="#" alt="" class="Company Logo" class="footer__logo">
-                    <h1 class="footer__company-name">
-                        NOMBRE DE LA EMPRESA
+                <div class="user-navbar__user-avatar-container">
+                    <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/50px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de usuario">
+                    </a>
+                </div>
+                <!-- TODO: avatar de la persona logueada o nombre -->
+            </div>
+            
+            <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
+
+            <label for="menu-btn" class="navbar__menu-label">
+                <span class="navbar__menu-icon"></span>
+            </label>
+
+
+            <ul class="navbar__nav-links-container">
+                <li class="navbar__nav-item">
+                    <a href="/index.html" class="navbar__nav-link">Inicio</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/register/register.html" class="navbar__nav-link">Registro</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+
+    <main class="main">
+        <section class="section-cards">
+            <header class="section-cards__header">
+
+                <div class="section-cards__title-container">
+                    <h1 class="section-cards__ title">
+                        SYNERGIAROOTS
                     </h1>
-                    <p class="footer__copyrigth">
-                        Todos los derechos reservados
+                    <p class="section-cards__subtititle">
+
                     </p>
                 </div>
-                    <div class="footer__column">
-                        
+                <div class="section-card__products-search-container">
+                    <div class="products-search">
+                        <div class="product-search">
+                            <label for="search_product" class="product-search__label">Buscar</label>
+                            <input id="search_product" type="text" class="product-search__input">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </div>
+
 
                     </div>
-            </footer>
-        </footer>
+                    <div class="section-card__products-count">
+                        Se encontraron 12 productos
+                    </div>
+                </div>
+            </header>
+
+
+
+            <div class="card-container">
+                <h1 class="section-cards__category">
+                    CBD MASCOTAS
+                </h1>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets/category cbd mascotas/snack cats.jpg" alt="Product Image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Snacks Para Gatos JUST CBD
+                        </div>
+                        <p class="card__description">
+                            Además del cannabidiol derivado del cáñamo, nuestras golosinas para gatos con CBD están
+                            hechas con vitaminas y minerales esenciales, como ácido fólico, biotina, vitamina K y
+                            riboflavina, y vienen en sabores que dejarán satisfecho a su gato, como pavo, pollo, hígado
+                            y pescado.
+                        </p>
+                        <h3 class="card__price">
+                            $ 90000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets/category cbd mascotas/bacon para perros.jpg" alt="Product Image"
+                            class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Baycon PAra Perros
+                        </div>
+                        <p class="card__description">
+                            Si su perro está envejeciendo, nuestras golosinas de aceite de CBD para perros ayudarán a
+                            retroceder el reloj, disminuir dolencias y darles mejor calidad de vida.
+                        </p>
+                        <h3 class="card__price">
+                            $ 80000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets/category cbd mascotas/Tintura de CBD para mascotas-Tocino.jpg"
+                            alt="Product Image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Tintura De CBD Para Mascotas
+                        </div>
+                        <p class="card__description">
+                            Nuestras tinturas para mascotas de primera línea están hechas con aceite de extracto de
+                            cáñamo puro y viene en tres dosis variables de 100 mg, 250 mg y 500 mg, para que tenga la
+                            libertad de ajustar la dosis de su mascota en función de su tamaño y necesidades-
+                        </p>
+                        <h3 class="card__price">
+                            $ 120000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets\category cbd mascotas\Gotas CBD Pet Calm 2.jpeg" alt="Product Image"
+                            class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Gotas De CBD PetCalm 2%
+                        </div>
+                        <p class="card__description">
+                            Aceite de extracto de flor de cannabis ,ideal para reducir los niveles de estrés y ansiedad.
+                            Analgésico, ansiolítico y anti- inflamatorio.
+                        </p>
+                        <h3 class="card__price">
+                            $ 70000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <h1 class="section-cards__category">
+                    PARAFERNALIA
+                </h1>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets/category parafernalia/BongVidrio.jpg" alt="Product Image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Bong De Vidrio
+                        </div>
+                        <p class="card__description">
+                            Si quieres un bong con un diseño exclusivo te presentamos el bong poligonal que su nombre
+                            hace referencia a sus 12 lados que forman una base poligonal. Su tubo descendente
+                            "Downsteam" hace que tus sesiones sean mucho más suaves y frescas.
+                        </p>
+                        <h3 class="card__price">
+                            $ 30000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets/category parafernalia/Grinder3Pisos.jpeg" alt="Product Image"
+                            class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Grinder 3 pisos
+                        </div>
+                        <p class="card__description">
+                            Esta grinder metálico de la marca Lion Rolling Circus es de tamaño pequeño y está conformada
+                            por 3 piezas, incorpora dientes afilados en forma de diamante que te permitirán moler tu
+                            hierba de manera uniforme.
+                        </p>
+                        <h3 class="card__price">
+                            $ 40000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets/category parafernalia/PipatornilloVidrio.jpeg" alt="Product Image"
+                            class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Pipa Tornillo En Vidrio
+                        </div>
+                        <p class="card__description">
+                            Pipa Blunt Mini 7P en vidrio con tornillo interno, esta pipa con un solo llenado carga gran
+                            cantidad y para liberar las cenizas se gira el tornillo sin fin que tiene en su interior.
+                        </p>
+                        <h3 class="card__price">
+                            $ 35000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets/category parafernalia/Puchosancestrales.jpeg" alt="Product Image"
+                            class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Puchos Ancestrales
+                        </div>
+                        <p class="card__description">
+                            Las infusiones tienen propiedades medicinales que te ayudarán a mitigar un sinnúmero de
+                            males y de forma completamente Natural Las mezclas que te 𝐨𝐟𝐫𝐞𝐜𝐞𝐦𝐨𝐬 en puchosestán
+                            cuidadosamente elaboradas para ayudarte con diferentes padecimientos como:Estrés, Ansiedad,
+                            Dolores de Cabeza, Cólicos Menstruales, Falta de Concentración o Mal Ánimo.
+                        </p>
+                        <h3 class="card__price">
+                            $ 25000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <h1 class="section-cards__category">
+                    VAPE
+                </h1>
+
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets/category vape/Bateria Brass.jpeg" alt="Product Image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Batería Bras
+                        </div>
+                        <p class="card__description">
+                            La mejor batería o pila para vapear tus destilados en cualquier lugar, esta es una bateria
+                            de larga duración recargable, ademas la puedes usar con cualquier esencia que este envasada
+                            en un cartucho de rosca universal de 10 mm,
+                        </p>
+                        <h3 class="card__price">
+                            $ 50000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets/category vape/Cartuchos de nicotina.jpeg" alt="Product Image"
+                            class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Cartuchos De Nicotina
+                        </div>
+                        <p class="card__description">
+                            La mezcla de nicotina es patentada, hecha a propósito para ser extra suave para adaptarse a
+                            los fumadores adultos que buscan cambiar el tabaco tradicional.
+                        </p>
+                        <h3 class="card__price">
+                            $ 35000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets/category vape/Bateria Cookies.jpeg" alt="Product Image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Bateria Cookies
+                        </div>
+                        <p class="card__description">
+                            La batería del vaporizador de cartucho Cookies está diseñada para funcionar con aceite
+                            espeso, con una vida útil prolongada de la batería.
+                        </p>
+                        <h3 class="card__price">
+                            $ 230000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="assets/category vape/Vape de nicotina.jpeg" alt="Product Image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Vapeador De Nicotina
+                        </div>
+                        <p class="card__description">
+                            Una nueva forma de vapear sin ensuciar resistencias o recargas. Simple, satisfactorio y
+                            sigiloso es práctico para el uso diario de los fumadores adultos que buscan una alternativa
+                            viable a los cigarrillos tradicionales.
+                        </p>
+                        <h3 class="card__price">
+                            $ 60000
+                        </h3>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="crad__btn" href="#">
+                                AÑADIR AL CARRITO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <div class="whatsapp-container">
+        <a href="" class="whatsapp-container__link">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer__column">
+
+            <ul class="footer__social-media-container">
+                <li class="footer__social-media-item">
+                    <a href="#" class="footer__footer-link"></a>
+                    <i class="fa-brands fa-facebook-f footer__contact-icon footer__contact-icon--facebook"></i>
+                        Facebook
+                    </a>  
+                </li>
+
+                <li class="footer_social-media-item">
+                    <a href="#" class="footer__footer-link"></a>
+                    <i class="fa-brands fa-instagram footer__contact-icon footer__contact-icon--instagram"></i>
+                    Instagram
+                </a>  
+                </li>
+
+                <li class="footer_social-media-item">
+                    <a href="#" class="footer__footer-link">
+                    <i class="fa-brands fa-linkedin footer__contact-icon footer__contact-icon--linkedin"></i>
+                        Linkedin
+                    </a>     
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__column">
+            <img src="/assets/images/Logo.png" alt="" class="footer__logo">
+            <h1 class="footer__company-name">
+                SYNERGIA ROOTS
+            </h1>
+
+        </div>
+
+        <div class="footer__column">
+            <ul class="footer__contact-container">
+
+
+                <li class="footer_contact-item">
+                    <i class="fa-solid fa-phone footer_contact-item"></i>
+                    <a href="#" class="footer__contact-link">
+                        Teléfono
+                    </a>
+                </li>
+                <li class="footer_contact-item">
+                    <i class="fa-solid fa-location-dot footer_social-contact-item"></i>
+                    <a href="#" class="footer__contact-link">
+                        <!--Icono -->
+                        Localización
+                    </a>
+                </li>
+                <li class="footer_contact-item">
+                    <i class="fa-solid fa-at footer_contact-item"></i>
+                    <a href="#" class="footer__contact-link">
+                        <!--Icono -->
+                        email
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
