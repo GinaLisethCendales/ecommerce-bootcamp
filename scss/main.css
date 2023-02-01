@@ -387,7 +387,7 @@ body {
   grid-column: 1/-1;
   width: 100%;
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 20px;
   color: #E8E2E2;
 }
 
@@ -716,6 +716,59 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.titulo-form {
+  color: #E8E2E2;
+  margin-bottom: 10px;
+}
+
+.formRegistroUsuario {
+  background-color: #E8E2E2;
+  border-radius: 5px;
+  width: 50%;
+  height: 400px;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.formUsuario {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.input_form {
+  width: 400px;
+}
+
+.terminos {
+  display: flex;
+  justify-content: center;
+}
+
+.botonEnviar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.btn-form {
+  padding: 10px;
+  width: 60px;
+  background-color: #F99417;
+  color: #5D3891;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-form:hover {
+  opacity: 0.7;
+  color: #222;
 }
 
 .title-container {

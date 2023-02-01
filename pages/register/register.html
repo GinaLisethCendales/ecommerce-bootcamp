@@ -65,39 +65,39 @@
                 <form class="form-container">
                     <div class="formUsuario">
                         <label for="idInputName" class="label">Nombre Completo</label>
-                        <input type="text" name="fullName" placeholder="Mauricio Quintero" class="input" required
+                        <input type="text" name="fullName" placeholder="Mauricio Quintero" class="input_form" required
                             minlength="8" maxlength="20" autofocus>
                     </div>
 
                     <div class="formUsuario">
                         <label for="emailInput" class="label">Email</label>
-                        <input type="email" name="email" class="input" placeholder="example@email.com" required
+                        <input type="email" name="email" class="input_form" placeholder="example@email.com" required
                             minlength="8" maxlength="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     </div>
 
                     <div class="formUsuario">
                         <label for="passInput" class="label">Contraseña</label>
-                        <input type="password" required minlength="8" maxlength="20" class="input">
+                        <input type="password" required minlength="8" maxlength="20" class="input_form">
                     </div>
 
                     <div class="formUsuario">
                         <label for="repeatPassInput" class="label">Repetir contraseña</label>
-                        <input type="password" required minlength="8" maxlength="20" class="input">
+                        <input type="password" required minlength="8" maxlength="20" class="input_form">
                     </div>
 
                     <div class="formUsuario">
                         <label for="ageInput" class="label">Edad</label>
-                        <input type="number" name="age" id="ageInput" min="16" max="99" class="input">
+                        <input type="number" name="age" id="ageInput" min="16" max="99" class="input_form">
                     </div>
 
                     <div class="formUsuario">
                         <label for="bornDateInput" class="label">Fecha Nacimiento</label>
-                        <input type="date" name="bornDate" min="2007-01-01" class="input">
+                        <input type="date" name="bornDate" min="2007-01-01" class="input_form">
                     </div>
 
-                    <div class="formUsuarioPais">
+                    <div class="formUsuario">
                         <label for="country" class="label">Pais de Nacimiento</label>
-                        <select name="country" id="country">
+                        <select name="country" id="country" class="input_form">
                             <option value="AF">Afghanistan</option>
                             <option value="AX">Åland Islands</option>
                             <option value="AL">Albania</option>
@@ -364,7 +364,7 @@
 
                     <div class="terminos">
 
-                        <input type="checkbox" name="terminosYCondiciones" valu="terminos"> <span class="terms">Acepto
+                        <input type="checkbox" name="terminosYCondiciones" value="terminos"> <span class="terms">Acepto
                             los términos y condiciones</span>
                     </div>
 
