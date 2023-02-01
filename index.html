@@ -9,22 +9,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/scss/main.css">
 </head>
 
 <body>
     <header class="header">
         <nav class="navbar">
-
             <a href="/index.html" class="navbar__nav-link">
                 <img class="navbar__logo" src="/assets/images/Logo.png" alt="Logo del ecommerce " >
             </a>
+            <div class="user-navbar">
+                <div class="user-navbar__cart-icon-container">
+                    <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+                <div class="user-navbar__user-avatar-container">
+                    <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/50px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de usuario">
+                    </a>
+                </div>
+                <!-- TODO: avatar de la persona logueada o nombre -->
+            </div>
+
 
             <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
 
             <label for="menu-btn" class="navbar__menu-label">
                 <span class="navbar__menu-icon"></span>
             </label>
+
             <ul class="navbar__nav-links-container">
                 <li class="navbar__nav-item">
                     <a href="/index.html" class="navbar__nav-link">Inicio</a>
@@ -43,13 +57,13 @@
             <div class="user-navbar">
                 <div class="user navbar__cart-icon-container">
                     <!--TODO  add font icon and icon item-->
-                    IC
+                    
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <section class="section-cards">
             <header class="section-cards__header">
 
@@ -64,8 +78,8 @@
                 <div class="section-card__products-search-container">
                     <div class="products-search">
                         <div class="product-search">
-                            <label for="" class="product-search__label">Buscar</label>
-                            <input type="text" class="product-search__input">
+                            <label for="search_product" class="product-search__label">Buscar</label>
+                            <input id="search_product" type="text" class="product-search__input">
                             <button class="product-search__btn">Buscar</button>
 
                         </div>
@@ -467,9 +481,7 @@
             <h1 class="footer__company-name" width="50">
                 SYNERGIA ROOTS
             </h1>
-            <p class="footer__copyrigth">
-                Todos los derechos reservados
-            </p>
+            
         </div>
         <div class="footer__column">
             <ul class="footer__contact-container">
