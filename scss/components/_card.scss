@@ -6,22 +6,23 @@
     transition:  .6s ease-in-out;
     border: 1px solid rgb(212, 178, 215);
     background-color: beige;
-
-
     &:hover{
         box-shadow: 3px 3px 50px rgba(13, 13, 14, 0.253);
     }
 
 
      &__header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 150px;
-        width: 400px;
-        background-color: rgb(234, 230, 221);
+        width: 100%;
+        background-color: $color-bg-primary;
 
      }
     &__img{
-        height: 100px;
-        width: 100px;
+        height: 90%;
+        
 
     }
     &__body{
@@ -35,7 +36,8 @@
     }
     &__title{
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.0rem;
+        text-overflow: ellipsis;
         height: 20%;
         border-bottom: 2px solid rgb(4, 4, 3);
 
@@ -46,16 +48,13 @@
         height: 60%;
         flex-direction: row;
         font-family: 'Roboto', sans-serif;
-        text-align: start;
-
+        text-align: justify;
+        overflow: auto;
     }
     &__price{
-        font-weight: 500;
-        font-size: 1.5rem;
-        height: 20%;
-        display: flex;
-        justify-content: center;
-        color: $color-bg-primary;
+        margin: 10px;
+        text-align: center;
+        color: $color-bg-primary !important;
 
     }
     &__footer{
