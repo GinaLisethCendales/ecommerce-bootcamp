@@ -17,12 +17,29 @@
 
     &__social-contact-item {}
 
-    &__footer-link {}
+    &__footer-link {
+ 
+    }
 
     &__company-name {
         color: $color-bg-ternary;
         font-size: 1rem;
     }
+
+       &__contact-icon{
+        font-size: 1.75rem;
+
+        &__contac-icon{font-size: 1.35rem;}
+
+        &--facebook{color:#1948c1 ;}
+
+        &--instagram{color: #d11154;} 
+
+        &--linkedin{color: #0a66c2;}
+    }
+
+
+    
 
     &__logo {
         width: 50px;
