@@ -16,6 +16,48 @@
     <header class="header">
         <nav class="navbar">
             <a href="/index.html" class="navbar__nav-link">
+                <img class="navbar__logo" src="/assets/images/Logo.png" alt="Logo del ecommerce">
+            </a>
+            <div class="user-navbar">
+                <div class="user-navbar__cart-icon-container">
+                    <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+                <div class="user-navbar__user-avatar-container">
+                    <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/50px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de usuario">
+                    </a>
+                </div>
+                <!-- TODO: avatar de la persona logueada o nombre -->
+            </div>
+            
+            <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
+
+            <label for="menu-btn" class="navbar__menu-label">
+                <span class="navbar__menu-icon"></span>
+            </label>
+
+
+            <ul class="navbar__nav-links-container">
+                <li class="navbar__nav-item">
+                    <a href="/index.html" class="navbar__nav-link">Inicio</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/register/register.html" class="navbar__nav-link">Registro</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <header class="header">
+        <nav class="navbar">
+            <a href="/index.html" class="navbar__nav-link">
                 <img class="navbar__logo" src="/assets/images/Logo.png" alt="Logo del ecommerce ">
             </a>
             <div class="user-navbar">
@@ -30,7 +72,7 @@
                             class="user-navbar__user-avatar" alt="Imagen de usuario">
                     </a>
                 </div>
-                <!-- TODO: avatar de la persona logueada o nombre -->
+                
             </div>
 
 
@@ -57,12 +99,14 @@
             </ul>
             <div class="user-navbar">
                 <div class="user navbar__cart-icon-container">
-                    <!--TODO  add font icon and icon item-->
+                    
 
                 </div>
             </div>
         </nav>
-    </header>
+    </header> -->
+
+
 
     <main class="main">
         <section class="section-cards">
@@ -81,7 +125,7 @@
                         <div class="product-search">
                             <label for="search_product" class="product-search__label">Buscar</label>
                             <input id="search_product" type="text" class="product-search__input">
-                            <button class="product-search__btn">Buscar</button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
 
                         </div>
 
@@ -470,16 +514,19 @@
     </main>
 
 
-    
+
     <div class="whatsapp-container">
         <a href="" class="whatsapp-container__link">
-            <img src="#" alt="whatsapp contact link" class="whatsapp-container__img">
+            <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
+
+
     <footer class="footer">
         <div class="footer__column">
+
             <ul class="footer__social-media-container">
-                <li class="footer_social-contact-item">
+                <li class="footer__social-contact-item">
                     <a href="#" class="footer__footer-link"></a>
                     <i class="fa-brands fa-facebook footer_contact-icon--facebook"></i>
                     Facebook
@@ -487,14 +534,14 @@
                 </li>
 
                 <li class="footer_social-medoa-item">
-                    <a href="#" class="footer__social-media-link"></a>
+                    <a href="#" class="footer__footer-link"></a>
                     <i class="fa-brands fa-instagram footer_contact-icon--instagram"></i>
                     Instagram
                     </a>
                 </li>
 
                 <li class="footer_social-medoa-item">
-                    <a href="#" class="footer__social-media-link">
+                    <a href="#" class="footer__footer-link">
                         <i class="fa-brands fa-linkedin footer_contact--linkedin"></i>
                         Linkedin
                     </a>
@@ -503,12 +550,13 @@
         </div>
 
         <div class="footer__column">
-            <img src="/assets/images/Logo.png" alt="" class="Company Logo" class="footer__logo">
-            <h1 class="footer__company-name" width="50">
+            <img src="/assets/images/Logo.png" alt="" class="footer__logo">
+            <h1 class="footer__company-name">
                 SYNERGIA ROOTS
             </h1>
 
         </div>
+
         <div class="footer__column">
             <ul class="footer__contact-container">
 
@@ -516,15 +564,14 @@
                 <li class="footer_contact-item">
                     <i class="fa-solid fa-phone footer_contact-item"></i>
                     <a href="#" class="footer__contact-link">
-                        <!--Icono -->
-                        Telefono
+                        Teléfono
                     </a>
                 </li>
                 <li class="footer_contact-item">
                     <i class="fa-solid fa-location-dot footer_social-contact-item"></i>
                     <a href="#" class="footer__contact-link">
                         <!--Icono -->
-                        Localizacion
+                        Localización
                     </a>
                 </li>
                 <li class="footer_contact-item">
