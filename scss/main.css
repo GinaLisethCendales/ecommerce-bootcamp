@@ -359,6 +359,13 @@ body {
   background: linear-gradient(90deg, rgb(2, 0, 36) 9%, rgb(61, 97, 180) 100%);
 }
 
+.section-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .section-cards__header {
   display: flex;
   justify-content: space-between;
@@ -480,11 +487,10 @@ body {
 }
 
 .card-container {
+  width: 90%;
   display: grid;
-  width: 100%;
-  height: auto;
-  grid-template-columns: repeat(4, 300px);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 10px;
   margin: 20px;
 }
 
