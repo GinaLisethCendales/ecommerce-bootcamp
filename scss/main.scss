@@ -1,10 +1,15 @@
 @import "abstracts/variables";
 
-@import "base/reset";
 
+//BASE
+@import "base/reset";
 @import "base/typography";
 
+//COMPONENTS
 @import "components/card";
+@import "components/_radio_checkbox";
+@import "components/alert-dialog";
+
 
 @import "layout/header";
 @import "layout/footer";
@@ -13,7 +18,10 @@
 
 
 @import "pages/about-us";
+
+//pages
 @import "pages/home";
+@import "pages/login";
+
 @import "pages/contact";
 @import "pages/register"
-

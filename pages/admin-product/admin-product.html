@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/main.css">
     <script type="application/json" src="/data/products.json"></script>
+
     <!-- <link rel="stylesheet" href="/scss/main.css"> -->
 </head>
 
@@ -44,7 +45,7 @@
                 <ul class="">
                     <li class="">
                         <div class="user-navbar__cart-icon-container">
-                            <a href="/pages/order/order.html">
+                            <a href="#">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </a>
                         </div>
@@ -73,57 +74,81 @@
 
     </header>
 
+    <main class="main">
+        <h1 class="title-user" style="color:white">Admin Productos</h1>
+        <div class="container-user">
+
+            <form id="Registerproduct" class="product-form Registerproduct">
 
 
-    <main class="main-index">
-        <section class="section-title">
-            <section class="main_title">
-            </section>
-            <div class="main-title__title-container">
-                <h1 class="main-title__title">
-                    SYNERGIAROOTS
-                </h1>
-                <p class="main-title__subtitle">
-                    Enfocados en el desarrollo, cultura e industria del cultivo de Cannabis. Escríbenos y haz parte
-                    de nuestra comunidad
-                </p>
+                <div class="formProduct">
+                    <label class="labelProduct" for="nameLabel">Nombre producto</label>
+                    <input class="inputProduct" type="text" name="nombre" id="nombreinput" required>
+
+                </div>
+                <div class="formProduct">
+                    <label class="labelProduct" for="descLabel">Descripcion</label>
+                    <textarea class="inputProduct" name="descripcion" id="descripcioninput" rows="1"
+                        required></textarea>
+                </div>
+                <div class="formProduct">
+                    <label class="labelProduct" for="priceLabel">Precio</label>
+                    <input class="inputProduct" type="number" name="price" id="precio" required>
+                </div>
+                <div class="formProduct">
+                    <label class="labelProduct" for="imgLabel">Imagen</label>
+                    <input class="inputProduct" type="text" name="image" id="imagen" required>
+                </div>
+                <button type="submit" class="submit-btn" id="submitbtn">Registrar producto</button>
+            </form>
+            <div class="TableContainer">
+                <table class="Table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                            <th class="td-image">Imagen</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody class="TableBody" id="Table">
+
+                    </tbody>
+                </table>
             </div>
-
-
-        </section>
-
-        <section class="section-cards">
-            <header class="section-cards__header">
-
-                <section class="main_product_search">
-                    <div class="section-cards__products-search-container">
-                        <div class="products-search">
-                            <div class="product-search">
-                                <input type="text" id="searchInput" placeholder="Buscar" type="text"
-                                    class="product-search__input">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-
-                            </div>
-
-
-                        </div>
-                        <div class="section-cards__products-count">
-                            <p id="totalResults"></p>
-                        </div>
-                    </div>
-
-                </section>
-
-            </header>
+        </div>
 
 
 
-            <div class="card-container">
-                <!-- carga mediante js -->
-            </div>
 
-        </section>
+
+
+
+
+
+
+
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -189,12 +214,11 @@
                 </li>
             </ul>
         </div>
+
     </footer>
 
-    <script src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/admin-product.js"></script>
     <script src="/js/header.js"></script>
-
-
+    
 </body>
-
 </html>

@@ -4,9 +4,22 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-
+@font-face {
+    font-family: GeometosNeueLight;
+    src: url(../fonts/GeometosNeueLight.ttf);
+  }
+  
+  @font-face {
+    font-family: GeometosNeueBlack;
+    src: url(../fonts/GeometosNeueBlack.ttf);
+  }
+  
+  @font-face {
+    font-family: GeometosNeueBold;
+    src: url(../fonts/GeometosNeueBold.ttf);
+  }
 body {
     font-family: 'Roboto', sans-serif;
     font-size: .8rem;

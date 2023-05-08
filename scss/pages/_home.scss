@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     &__header {
         display: flex;
         justify-content: space-between;
@@ -132,16 +133,4 @@ body {
         }
     }
 
-}
-
-.card-container {
-    width: 95%;
-
-    display: grid;
-    // grid-auto-rows: minmax(100px,1fr);
-    // grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
-    // grid-template-columns: repeat(auto-fill, minmax(230px,300px));
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    grid-gap: 10px;
-    margin:20px;
 }

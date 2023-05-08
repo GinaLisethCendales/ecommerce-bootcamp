@@ -44,7 +44,7 @@
                 <ul class="">
                     <li class="">
                         <div class="user-navbar__cart-icon-container">
-                            <a href="/pages/order/order.html">
+                            <a href="#">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </a>
                         </div>
@@ -56,7 +56,7 @@
                                     class="user-navbar__user-avatar" alt="Imagen de usuario">
                             </div>
                         </a>
-                        <ul class="" id="sign-in">     
+                        <ul class="" id="sign-in">
                         </ul>
                     </li>
                 </ul>
@@ -73,57 +73,36 @@
 
     </header>
 
-
-
-    <main class="main-index">
-        <section class="section-title">
-            <section class="main_title">
-            </section>
-            <div class="main-title__title-container">
-                <h1 class="main-title__title">
-                    SYNERGIAROOTS
-                </h1>
-                <p class="main-title__subtitle">
-                    Enfocados en el desarrollo, cultura e industria del cultivo de Cannabis. Escríbenos y haz parte
-                    de nuestra comunidad
-                </p>
+    <main class="main">
+        <div class="product-detail-container">
+            <div class="product-detail-image-container">
+                <img id="product-imagen" src="/assets/images/default.png" alt="" class="product-detail-image" id="product-detail-image"></img>
             </div>
-
-
-        </section>
-
-        <section class="section-cards">
-            <header class="section-cards__header">
-
-                <section class="main_product_search">
-                    <div class="section-cards__products-search-container">
-                        <div class="products-search">
-                            <div class="product-search">
-                                <input type="text" id="searchInput" placeholder="Buscar" type="text"
-                                    class="product-search__input">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-
-                            </div>
-
-
-                        </div>
-                        <div class="section-cards__products-count">
-                            <p id="totalResults"></p>
-                        </div>
-                    </div>
-
-                </section>
-
-            </header>
-
-
-
-            <div class="card-container">
-                <!-- carga mediante js -->
+            <div class="product-detail-description-container">
+                <h5>Category</h5>
+                <h2 id="product-nombre">Title</h2>
+                <h2 id="product-precio">Price</h2>
+                <p id="product-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil cum laborum saepe esse. Architecto, itaque provident, eos aspernatur veritatis laboriosam dicta iusto neque est distinctio dolorum deleniti aliquam nulla molestiae!</p>
+                
             </div>
+            <div class="product-detail-actions">
+                <div class="product-detail-cantidad">
+                    <a id="agregar" onclick="agregar()"><i class="fa-sharp fa-regular fa-plus" style="color: #4bff2bf3;"></i></a>
+                    <input id="cantidad" type="text" disabled="true"></input>
+                    <a id="disminuir" onclick="disminuir()"><i class="fa-solid fa-minus" style="color: #fe4343;"></i></a>
 
-        </section>
+                </div>
+                <div class="product-detail-botones">
+                    <button class="product-detail-button button-23" onclick="añadirCarrito(cantidad.value)">Añadir al carrito</button>
+                    <button class="product-detail-button button-24" onclick="irAOrdenes()"> Comprar ahora</button>
+                </div>
+            </div>
+    
+        </div>
     </main>
+
+
+
 
 
 
@@ -132,8 +111,6 @@
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
-
-
     <footer class="footer">
         <div class="footer__column">
             <ul class="footer__contact-container">
@@ -189,12 +166,11 @@
                 </li>
             </ul>
         </div>
+
     </footer>
 
-    <script src="/js/index.js"></script>
+    <script src="/js/product-detail.js"></script>
     <script src="/js/header.js"></script>
-
-
 </body>
 
 </html>

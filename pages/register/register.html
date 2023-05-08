@@ -9,95 +9,120 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
+
 <body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/index.html" class="navbar__nav-link">
+                <img class="navbar__logo" src="/assets/images/Logo.png" alt="Logo del ecommerce">
+            </a>
 
-    <body>
-        <header class="header">
-            <nav class="navbar">
-                <a href="/index.html" class="navbar__nav-link">
-                    <img class="navbar__logo" src="/assets/images/Logo.png" alt="Logo del ecommerce">
-                </a>
-                <div class="user-navbar">
-                    <div class="user-navbar__cart-icon-container">
+            <label for="menu-btn" class="navbar__menu-label">
+                <span class="navbar__menu-icon"></span>
+            </label>
+
+
+            <ul class="navbar__nav-links-container">
+                <li class="navbar__nav-item">
+                    <a href="/index.html" class="navbar__nav-link">Inicio</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/register/register.html" class="navbar__nav-link">Registro</a>
+                </li>
+            </ul>
+            <nav class="menu" id="menu">
+                <ul class="">
+                    <li class="">
+                        <div class="user-navbar__cart-icon-container">
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="">
                         <a href="#">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/50px-Default_pfp.svg.png"
+                                    class="user-navbar__user-avatar" alt="Imagen de usuario">
+                            </div>
                         </a>
-                    </div>
-                    <div class="user-navbar__user-avatar-container">
-                        <a href="#">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/50px-Default_pfp.svg.png"
-                                class="user-navbar__user-avatar" alt="Imagen de usuario">
-                        </a>
-                    </div>
-                    <!-- TODO: avatar de la persona logueada o nombre -->
-                </div>
-
-                <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
-
-                <label for="menu-btn" class="navbar__menu-label">
-                    <span class="navbar__menu-icon"></span>
-                </label>
-
-
-                <ul class="navbar__nav-links-container">
-                    <li class="navbar__nav-item">
-                        <a href="/index.html" class="navbar__nav-link">Inicio</a>
-                    </li>
-                    <li class="navbar__nav-item">
-                        <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
-                    </li>
-                    <li class="navbar__nav-item">
-                        <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
-                    </li>
-                    <li class="navbar__nav-item">
-                        <a href="/pages/register/register.html" class="navbar__nav-link">Registro</a>
+                        <ul class="" id="sign-in">     
+                        </ul>
                     </li>
                 </ul>
             </nav>
-        </header>
 
-        <main class="main">
+
+            <!-- TODO: avatar de la persona logueada o nombre -->
+
+
+            <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
+        </nav>
+
+
+
+    </header>
+    <main class="main">
+        <div class="container form-container">
             <h1 class="titulo-form">REGISTRO DE USUARIO</h1>
-            <section class="formRegistroUsuario">
-                <form class="form-container">
+            <section class="formRegistroUsuario" id="formRegistroUsuario">
+                <form class="container-form">
                     <div class="formUsuario">
-                        <label for="idInputName" class="label">Nombre Completo</label>
-                        <input type="text" name="fullName" placeholder="Mauricio Quintero" class="input_form" required
-                            minlength="8" maxlength="20" autofocus>
+                        <label for="idInputName" class="label_input">Nombre Completo</label>
+                        <input type="text" name="fullName" placeholder="Mauricio Quintero" class="container-form__input"
+                            required minlength="8" maxlength="20" autofocus>
                     </div>
 
                     <div class="formUsuario">
-                        <label for="emailInput" class="label">Email</label>
-                        <input type="email" name="email" class="input_form" placeholder="example@email.com" required
-                            minlength="8" maxlength="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <label for="emailInput" class="label_input">Email</label>
+                        <input type="email" name="email" class="container-form__input" placeholder="example@email.com"
+                            required minlength="8" maxlength="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     </div>
 
                     <div class="formUsuario">
-                        <label for="passInput" class="label">Contraseña</label>
-                        <input type="password" required minlength="8" maxlength="20" class="input_form">
+                        <label for="passInput" class="label_input">Contraseña</label>
+                        <input type="password" name="password" required minlength="8" maxlength="20"
+                            class="container-form__input">
                     </div>
 
                     <div class="formUsuario">
-                        <label for="repeatPassInput" class="label">Repetir contraseña</label>
-                        <input type="password" required minlength="8" maxlength="20" class="input_form">
+                        <label for="repeatPassInput" class="label_input">Repetir contraseña</label>
+                        <input type="password" name="password2" required minlength="8" maxlength="20"
+                            class="container-form__input">
                     </div>
 
                     <div class="formUsuario">
-                        <label for="ageInput" class="label">Edad</label>
-                        <input type="number" name="age" id="ageInput" min="16" max="99" class="input_form">
+                        <label for="rolInput" class="label_input">Rol</label>
+                        <select name="rol" id="rolInput" class="container-form__input">
+                            <option>Administrador</option>
+                            <option>Usuario</option>
+                        </select>
                     </div>
 
                     <div class="formUsuario">
-                        <label for="bornDateInput" class="label">Fecha Nacimiento</label>
-                        <input type="date" name="bornDate" min="2007-01-01" class="input_form">
+                        <label for="ageInput" class="label_input">Edad</label>
+                        <input type="number" name="age" id="ageInput" min="16" max="99" class="container-form__input">
+                    </div>
+
+
+
+                    <div class="formUsuario">
+                        <label for="bornDateInput" class="label_input">Fecha Nacimiento</label>
+                        <input type="date" name="bornDate" min="2007-01-01" class="container-form__input">
                     </div>
 
                     <div class="formUsuario">
-                        <label for="country" class="label">Pais de Nacimiento</label>
-                        <select name="country" id="country" class="input_form">
+                        <label for="country" class="label_input">Pais de Nacimiento</label>
+                        <select name="country" id="country" class="container-form__input">
                             <option value="AF">Afghanistan</option>
                             <option value="AX">Åland Islands</option>
                             <option value="AL">Albania</option>
@@ -351,7 +376,8 @@
                     </div>
 
                     <div class="formUsuario">
-                        <label for="sexInput" class="label">Sexo</label>
+                        <label for="sexInput" class="label_input">Sexo</label>
+                        <br>
                         <div class="gen-container">
                             <label class="label genero"><input class="radio" type="radio" name="gender"
                                     value="female">Femenino</label>
@@ -369,77 +395,90 @@
                     </div>
 
                     <div class="botonEnviar">
-                        <button class="btn-form" type="submit">Enviar</button>
+                        <button type="submit" class="btn-form" type="submit" id="registrar">Registrar usuario</button>
                     </div>
-
                 </form>
+
+                <div class="alter-dialog">
+                    Se agrego usuario exitosamente
+                </div>
+                <scrip src="/js/registrer.js"></scrip>
+
+
             </section>
-        </main>
+    </main>
 
-        <div class="whatsapp-container">
-            <a href="" target="_blank" class="whatsapp-container__link">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-        </div>
+    <div class="whatsapp-container">
+        <a href="" target="_blank" class="whatsapp-container__link">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
 
-        <footer class="footer">
-            <div class="footer__column">
-                <ul class="footer__contact-container">
-                    <li class="footer__contact-item">
-                        <a href="#" class="footer__contact-link">
-                            <i class="fa-brands fa-facebook footer__contact-icon footer__contact-icon--facebook"></i>
-                            Facebook
-                        </a>
-                    </li>
-                    <li class="footer__contact-item">
-                        <a href="#" class="footer__contact-link">
-                            <i class="fa-brands fa-instagram 
+    <footer class="footer">
+        <div class="footer__column">
+            <ul class="footer__contact-container">
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-brands fa-facebook footer__contact-icon footer__contact-icon--facebook"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-brands fa-instagram 
                                     footer__contact-icon
                                     footer__contact-icon--instagram"></i>
-                            Instagram
-                        </a>
-                    </li>
-                    <li class="footer__contact-item">
-                        <a href="#" class="footer__contact-link">
-                            <i class="fa-brands fa-linkedin 
+                        Instagram
+                    </a>
+                </li>
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-brands fa-linkedin 
                                     footer__contact-icon
                                     footer__contact-icon--linkedin"></i>
-                            Linkedin
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__column">
-                <img src="/assets/images/Logo.png" alt="Company Logo" class="footer__logo" width="50">
-                <h2 class="footer__company-name" style="color: white;">
-                    SYNERGIA ROOTS
-                </h2>
-            </div>
-            <div class="footer__column">
-                <ul class="footer__contact-container">
-                    <li class="footer__contact-item">
-                        <a href="#" class="footer__contact-link">
-                            <i class="fa-solid fa-square-phone-flip footer__contact-icon"></i>
-                            Teléfono
-                        </a>
-                    </li>
-                    <li class="footer__contact-item">
-                        <a href="#" class="footer__contact-link">
-                            <i class="fa-solid fa-location-dot footer__contact-icon"></i>
-                            Localización
-                        </a>
-                    </li>
-                    <li class="footer__contact-item">
-                        <a href="#" class="footer__contact-link">
-                            <i class="fa-solid fa-envelope footer__contact-icon"></i>
-                            Email
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+                        Linkedin
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <img src="/assets/images/Logo.png" alt="Company Logo" class="footer__logo" width="50">
+            <h2 class="footer__company-name" style="color: white;">
+                SYNERGIA ROOTS
+            </h2>
+        </div>
+        <div class="footer__column">
+            <ul class="footer__contact-container">
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-solid fa-square-phone-flip footer__contact-icon"></i>
+                        Teléfono
+                    </a>
+                </li>
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-solid fa-location-dot footer__contact-icon"></i>
+                        Localización
+                    </a>
+                </li>
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-solid fa-envelope footer__contact-icon"></i>
+                        Email
+                    </a>
+                </li>
+            </ul>
+        </div>
 
 
-    </body>
+
+
+
+    </footer>
+    <script src="/js/alert.js"></script>
+    <script src="/js/registrer.js"></script>
+    <script src="/js/header.js"></script>
+
+</body>
 
 </html>

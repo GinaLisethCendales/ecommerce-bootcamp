@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SYNERGIA ROOTS</title>
+    <title>Ingresar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/main.css">
-    <script type="application/json" src="/data/products.json"></script>
-    <!-- <link rel="stylesheet" href="/scss/main.css"> -->
 </head>
-
 <body>
     <header class="header">
         <nav class="navbar">
@@ -44,7 +40,7 @@
                 <ul class="">
                     <li class="">
                         <div class="user-navbar__cart-icon-container">
-                            <a href="/pages/order/order.html">
+                            <a href="#">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </a>
                         </div>
@@ -72,61 +68,25 @@
 
 
     </header>
-
-
-
-    <main class="main-index">
-        <section class="section-title">
-            <section class="main_title">
-            </section>
-            <div class="main-title__title-container">
-                <h1 class="main-title__title">
-                    SYNERGIAROOTS
-                </h1>
-                <p class="main-title__subtitle">
-                    Enfocados en el desarrollo, cultura e industria del cultivo de Cannabis. Escríbenos y haz parte
-                    de nuestra comunidad
-                </p>
-            </div>
-
-
-        </section>
-
-        <section class="section-cards">
-            <header class="section-cards__header">
-
-                <section class="main_product_search">
-                    <div class="section-cards__products-search-container">
-                        <div class="products-search">
-                            <div class="product-search">
-                                <input type="text" id="searchInput" placeholder="Buscar" type="text"
-                                    class="product-search__input">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-
-                            </div>
-
-
-                        </div>
-                        <div class="section-cards__products-count">
-                            <p id="totalResults"></p>
-                        </div>
-                    </div>
-
-                </section>
-
-            </header>
-
-
-
-            <div class="card-container">
-                <!-- carga mediante js -->
-            </div>
-
-        </section>
+    <main class="main main-login">
+    
     </main>
+    <div class="container-login">
+        <h1>LOGIN</h1>
+        <form class="login-form" id="loginForm">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" value="gina@gmail.com" required minlength="">  
+            </div>
 
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" value="hola123" required>
+            </div>
 
-
+            <button type="submit" class="iniciar-sesion bn632-hover bn22">Ingresar</button>
+        </form>
+    </div>
     <div class="whatsapp-container">
         <a href="" class="whatsapp-container__link">
             <i class="fa-brands fa-whatsapp"></i>
@@ -189,12 +149,16 @@
                 </li>
             </ul>
         </div>
+
+
+
+
+
     </footer>
-
-    <script src="/js/index.js"></script>
+    
+    <script src="/js/alert.js"></script>
+    <script src="/js/login.js"></script>
     <script src="/js/header.js"></script>
-
-
 </body>
-
 </html>
+    

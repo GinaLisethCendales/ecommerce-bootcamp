@@ -1,10 +1,10 @@
-
 .navbar {
     height: 50px;
     background-color: $color-bg-secondary;
     display: flex;
     align-items: center;
     position: relative;
+
     &__logo {
         margin: 0 5px;
         height: 40px;
@@ -28,8 +28,8 @@
         opacity: 0;
     }
 
-    &__menu-btn:checked ~ &__nav-links-container {
-            height: 200px
+    &__menu-btn:checked~&__nav-links-container {
+        height: 200px
     }
 
     &__menu-icon {
@@ -38,7 +38,8 @@
         width: 18px;
         position: relative;
 
-        &::after, &::before {
+        &::after,
+        &::before {
             content: '';
             height: 2px;
             background-color: $color-text-light;
@@ -46,16 +47,19 @@
             width: 100%;
             transition: all .2s ease-out;
         }
+
         &::after {
             top: 5px;
         }
+
         &::before {
             top: -5px;
         }
     }
 
-    &__menu-btn:checked ~ &__menu-label &__menu-icon {
+    &__menu-btn:checked~&__menu-label &__menu-icon {
         background: transparent;
+
         &::after {
             transform: rotate(45deg);
             top: 0;
@@ -81,14 +85,16 @@
         align-items: center;
         justify-content: center;
     }
+
     &__nav-item {
         padding: 1.25rem 1rem;
-        
+
         &:not(:last-child) {
             border-bottom: 2px solid transparent;
 
         }
     }
+
     &__nav-link {
         color: $color-text-light;
         font-size: 14px;
@@ -97,33 +103,36 @@
 
         &::after {
             content: "";
-        position: absolute;
-        background-color: #F3EFE0;
-        height: 2px;
-        width: 0;
-        left: 0;
-        bottom: -2px;
-        transition: 0.3s ease-in-out;
-    }
+            position: absolute;
+            background-color: #F3EFE0;
+            height: 2px;
+            width: 0;
+            left: 0;
+            bottom: -2px;
+            transition: 0.3s ease-in-out;
+        }
+
         &:hover::after {
             width: 100%;
         }
-}
+    }
 }
 
 .user-navbar {
-    
+
     margin-left: auto;
     color: white;
     display: flex;
     gap: 0 .5rem;
     align-items: center;
     padding: 0 1rem;
+
     &__user-avatar {
-            width: 30px;
-            height: 30px;
+        width: 30px;
+        height: 30px;
     }
-    .fa-cart-shopping{
+
+    .fa-cart-shopping {
         font-size: 20px;
         color: white;
     }
@@ -131,9 +140,12 @@
 
 @media screen and (min-width: 600px) {
     .navbar {
-        &__menu-label, &__menu-btn {
+
+        &__menu-label,
+        &__menu-btn {
             display: none;
         }
+
         &__nav-links-container {
             background-color: transparent;
             position: static;
@@ -141,14 +153,17 @@
             height: 100% !important;
             width: auto;
         }
+
         &__nav-link {
             font-size: 18px;
         }
     }
+
     .user-navbar {
         order: 3;
     }
 }
+
 .main-contact {
     margin: 50px 15px;
     padding: 1.5rem 0;
@@ -158,17 +173,20 @@
     justify-content: center;
     text-align: center;
 }
+
 .container {
     margin: 5px;
     width: 100%;
     height: auto;
 }
+
 textarea {
     width: 100%;
     border-radius: 10px;
     border: none;
     padding: 5px;
 }
+
 .label-container {
     display: flex;
     padding: 5px;
@@ -176,16 +194,19 @@ textarea {
     font-weight: 600;
     color: $color-bg-secondary;
 }
+
 .title {
-        margin-left: 15px;
-        display: flex;
-        color: $color-bg-secondary;
+    margin-left: 15px;
+    display: flex;
+    color: $color-bg-secondary;
 }
+
 .container-form {
     border-radius: 10px;
     background-color: rgba(94, 92, 92, 0.36);
     width: 100%;
     padding: 5px;
+
     &__input {
         border-radius: 5px;
         outline: none;
@@ -193,33 +214,42 @@ textarea {
         width: 100%;
         padding: 10px;
     }
+
     &__btn {
         border-radius: 5px;
-        background-color:  $color-bg-secondary;
+        background-color: $color-bg-secondary;
         color: white;
         border: 1px solid white;
         padding: 5px 10px;
         margin: 10px 3px;
         display: flex;
         cursor: pointer;
-        }
     }
+}
+
+
+
+
 .form-contact {
     margin: 0 15px;
 }
+
 .container-iframe {
     width: 100%;
 }
+
 iframe {
     width: 100%;
     border-radius: 10px;
 }
-@media screen and(min-width: 1000px) {
+
+@media screen and (min-width: 1000px) {
     .main-contact:not(h1) {
         display: flex;
         flex-direction: row;
     }
 }
+
 // .footer {
 //     display: flex;
 //     flex-direction: column;
@@ -241,9 +271,9 @@ iframe {
 //         display: flex;
 //         align-items: center;
 //         gap: .5rem;
-        
 
-        
+
+
 //     }
 
 //     &__contact-icon {

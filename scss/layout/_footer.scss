@@ -15,31 +15,42 @@
 
     &__social-media-container {}
 
-    &__social-contact-item {}
+    &__social-media-item {
+        color: antiquewhite;
+    }
 
     &__footer-link {
- 
+        color: white;
+        margin-right: 5px;
     }
 
     &__company-name {
-        color: $color-bg-ternary;
+        color: #E8E2E2;
         font-size: 1rem;
     }
 
-       &__contact-icon{
+    &__contact-icon {
         font-size: 1.75rem;
 
-        &__contac-icon{font-size: 1.35rem;}
+        &__contact-icon {
+            font-size: 1.35rem;
+        }
 
-        &--facebook{color:#1948c1 ;}
+        &--facebook {
+            color: #1948c1;
+        }
 
-        &--instagram{color: #d11154;} 
+        &--instagram {
+            color: #d11154;
+        }
 
-        &--linkedin{color: #0a66c2;}
+        &--linkedin {
+            color: #0a66c2;
+        }
     }
 
 
-    
+
 
     &__logo {
         width: 50px;
@@ -49,7 +60,13 @@
 
     &__contact-container {}
 
-    &__contact-item {}
+    &__contact-item {
+    color: antiquewhite;
 
-    &__contact-link {}
+    }
+
+    &__contact-link {
+        color: rgb(241, 241, 241);
+        margin-right: 5px;
+    }
 }
